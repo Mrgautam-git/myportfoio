@@ -1,0 +1,197 @@
+.my_projects {
+    background-color: #00162ffa; /* Light black background */
+    color: white; /* Text color for contrast */
+    height: 100vh; /* Fullscreen height */
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 40px; /* Padding for content */
+    text-align: center; /* Center text */
+}
+
+.projectbox {
+    height: 100%; /* Limit max width for better readability */
+    width: 100%; /* Full width */
+    margin: 0 auto; /* Center the box */
+}
+
+.project-header {
+    font-size: 2.5em; /* Large font size for header */
+    margin-bottom: 20px; /* Space below header */
+    animation: fadeIn 1s ease-in-out; /* Animation effect */
+}
+
+.projecthead {
+    margin-bottom: 40px; /* Space between header and projects */
+}
+
+.projecthead h3 {
+    font-size: 2em; /* Font size for subheading */
+    margin: 0; /* Remove default margin */
+}
+
+.projecthead p {
+    line-height: 1.5; /* Better line spacing for readability */
+}
+
+.projectsfolder {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    display: grid; /* Use grid layout for projects */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between grid items */
+}
+
+.projectsfile {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly lighter background for project items */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Padding for project items */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.projectsfile:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.filehead {
+    font-size: 1.5em; /* Font size for project title */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.filedis {
+    line-height: 1.5; /* Better line spacing for readability */
+}
+
+.filedis img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Start above */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at original position */
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .my_projects {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    .project-header {
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+
+    .projecthead h3 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+}
+.services {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    
+  }
+  
+  .services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  
+  }
+  
+  .service_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .servicecard {
+    background-color: #01292999;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 155vmin;
+    text-align: left;
+  }
+  
+  .servicecard h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    
+  }
+  
+  .servicecard p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .myexpertise {
+    list-style-type: none;
+    font-size: 1rem;
+  }
+  
+  .myexpertise li {
+    margin: 5px 0;
+  }
+  
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+  }
+  
+  .service {
+    background-color: #01292999;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 72vmin;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+  
+  .service:hover {
+    transform: scale(1.05);
+  }
+  
+  .service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .service-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .service-content img {
+    margin: 0;
+    height: 70px;
+    border-radius: 3%;
+  }
+  
+  .service-content p {
+    font-size: 0.95rem;
+  }
+  
+  
+  .seemore:hover {
+    background-color: #005bb5;
+  }
